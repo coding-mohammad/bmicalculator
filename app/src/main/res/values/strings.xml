@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="txt_age_info">Age</string>
+    <string name="txt_age">20</string>
+    <string name="txt_weight_info">weight</string>
+    <string name="txt_weight">75</string>
+    <string name="txt_calculate_bmi">calculate 🔥</string>
+    <string name="txt_height_info">height</string>
+    <string name="txt_bmi_result">BMI Result</string>
+    <string name="txt_Normal">Normal</string>
+    <string name="txt_Underweight">Underweight</string>
+    <string name="txt_Overweight">Overweight</string>
+    <string name="txt_Obese">Obese</string>
+    <string name="txt_Unidentified">Unidentified Body Mass Index</string>
+</resources>

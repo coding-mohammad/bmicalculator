@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ResultActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/dim12"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim12"
+            app:cardCornerRadius="@dimen/dim6"
+            app:cardElevation="@dimen/dim6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dim12">
+
+                <TextView
+                    android:id="@+id/txt_bmi_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim2"
+                    android:layout_marginBottom="@dimen/dim2"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt52"
+                    android:textStyle="bold"
+                    tools:text="22" />
+
+                <TextView
+                    android:id="@+id/txt_bmi_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim2"
+                    android:layout_marginBottom="@dimen/dim2"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt22"
+                    tools:text="NORMAL" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_share_result"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim6"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_btn_calculate"
+                android:padding="@dimen/dim12"
+                android:src="@drawable/ic_baseline_share_24" />
+
+            <ImageView
+                android:id="@+id/img_recalculate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim6"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_btn_calculate"
+                android:padding="@dimen/dim12"
+                android:src="@drawable/ic_baseline_replay_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
